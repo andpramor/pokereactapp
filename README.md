@@ -11,7 +11,7 @@ I used Vite to build this React project, in which I use pokéapi to fetch pokém
 - [x] Get the shiny version of a pokémon.
 - [ ] Let the random fetches return the shiny version, also randomly.
 - [x] Mark a pokémon as favourite and have a favourites list.
-- [x] Build a pokémon team of máx. 6 pokémon.
+- [x] Build a pokémon team of (Max 6 pokémon).
 - [ ] Build more than one team.
 - [x] Get the basic stats info of every pokémon in a search or in a team.
 
