@@ -1,0 +1,110 @@
+.choosePokemon {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 2.5rem;
+    border: 1px solid hsla(207.2412045062839, 100%, 40%, 1);
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 0 5px black;
+    background-color: #f4f4f48f;
+}
+
+.choosePokemon input, .choosePokemon .btn-outlined, .choosePokemon select {
+  background-color: #f4f4f4ea;
+}
+
+.choosePokemon--content {
+    display: flex;
+    flex-direction: row;
+    place-items: start;
+    gap: 2.5rem;
+}
+
+.choosePokemon--cardAside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.choosePokemon--favBtn {
+  width: fit-content;
+  height: fit-content;
+}
+
+.choosePokemon--favBtn__del {
+  border-radius: 8px;
+  border: 2px solid hsla(207.2995861876241, 100%, 25%, 1);
+  background-color: #f4f4f4aa;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-family: inherit;
+  cursor: pointer;
+  color: #213547;
+  transition: border-color 0.5s, color 0.5s, background-color 0.5s;
+}
+
+.choosePokemon--favBtn__del:hover {
+  border-color: red;
+  background-color: #f4f4f4ea;
+}
+
+.choosePokemon--shinyToggler {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.choosePokemon--shinyToggler:hover {
+  color:hsla(207.2995861876241, 100%, 25%, 1);
+}
+
+.choosePokemon--shinyCheckbox {
+  cursor: pointer;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.choosePokemon--shinyCheckbox:checked {
+  accent-color: hsla(207.2995861876241, 100%, 25%, 1);
+}
+
+.choosePokemon--emptyTeamText {
+  opacity: 0.6;
+  display: grid;
+  place-items: center;
+}
+
+.choosePokemon--emptyTeamText:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.choosePokemon--inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+}
+
+.choosePokemon--inputs > p:nth-child(1) {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.choosePokemon--footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+}
+
+.choosePokemon--fullTeam {
+    border: 1px solid hsla(207.2412045062839, 100%, 40%, 1);
+    border-radius: 500px;
+    padding: 5px 16px;
+}

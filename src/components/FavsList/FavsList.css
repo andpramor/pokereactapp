@@ -1,0 +1,46 @@
+.favsList {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.favsList--listContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 8px;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+.favsList--listItem {
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.favsList--listContainer:has(.favsList--listItem:hover)
+    .favsList--listItem:not(:hover) {
+    opacity: 0.8;
+    transform: scale(0.95);
+    filter: blur(5px) grayscale(100%);
+}
+
+.favsList--reset {
+    opacity: 0.6;
+}
+
+.favsList--reset:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.favsList__selected--controls {
+    display: flex;
+    gap: 16px;
+}
+
+.favsList__selected--controls button {
+    box-shadow: 0 0 5px black;
+}

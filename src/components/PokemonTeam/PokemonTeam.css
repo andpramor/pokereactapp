@@ -1,0 +1,40 @@
+.pokemonTeam {
+    width: clamp(250px, 60vw, 800px);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 25px;
+    padding: 25px;
+    background-color: #f4f4f48f;
+    border: 1px solid hsla(207.2412045062839, 100%, 40%, 1);
+    border-radius: 25px;
+    box-shadow: 0 0 5px black;
+}
+
+.pokemonTeam--member {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.pokemonTeam--member--discard {
+    display: none;
+    text-align: center;
+    color: white;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transform: translate(-50%);
+}
+/* Pendiente: controlar si es shiny: cambiar el color de pokemonTeam--member--discard */
+
+.pokemonTeam--member:hover .pokemonTeam--member--discard {
+    display: block;
+}
+
+.pokemonTeam--member--discard:hover {
+    cursor: pointer;
+    opacity: 1;
+}
