@@ -1,5 +1,7 @@
 # PokéReactApp
 I used Vite to build this React project, in which I use pokéapi to fetch pokémon data. This application is educational, I'm developing it to help me learn react's ins and outs.
+<p>Check it out here: <a href="https://andrespradomorgaz.com/pokereactapp/">Live demo</a>.</p>
+
 ## User stories
 - [x] Get a random pokémon.
 - [x] Search for an specific pokémon.
