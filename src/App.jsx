@@ -4,6 +4,7 @@ import './App.css'
 import { ChoosePokemon } from './components/ChoosePokemon/ChoosePokemon'
 import { PokemonTeam } from './components/PokemonTeam/PokemonTeam'
 import { FavsList } from './components/FavsList/FavsList'
+import { Footer } from './components/Footer/Footer'
 
 function App () {
   const [team, setTeam] = useState([])
@@ -39,7 +40,7 @@ function App () {
   const emptyFavs = () => setFavs([])
 
   return (
-    <>
+    <div className='app-container'>
       <main className='app'>
         <div className='app--teamBuilder'>
           <ChoosePokemon addToTeam={addToTeam} currentTeamSize={team.length} emptyTeam={emptyTeam} favs={favs} addToFavs={addToFavs} removeFromFavs={removeFromFavs} />
@@ -48,7 +49,8 @@ function App () {
         </div>
         <FavsList favs={favs} emptyFavs={emptyFavs} removeFromFavs={removeFromFavs} />
       </main>
-    </>
+      <Footer />
+    </div>
   )
 }
 
